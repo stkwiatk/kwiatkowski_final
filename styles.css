@@ -1,0 +1,211 @@
+:root{
+  background-color: #FFE08C;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #FFE08C 10px ), repeating-linear-gradient( #ffffff55, #ffffff );
+  background-position: 0 0, 0 0, 5px 9px, 5px 9px, 0 0, 5px 9px;
+    font-size: 16px;
+    --fonts: Lato, Montserrat, sans-serif;
+    --yellow: #ffcc40;
+    --red: #c9002c;
+    --blue: #0078d4;
+    --white: #fff;
+    --box-shadow: -0.5rem 0.5rem 1rem var(--red); 
+    --small-shadow: -0.25rem 0.25rem 0.5rem var(--red);
+    --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--red));
+  }
+  
+  /* ----- BODY STYLES ----- */
+  
+  body{
+    width: 1280px;
+    margin: 0 auto;
+    font-family: var(--fonts);
+    color: var(--red);
+    line-height: 1.35;
+    box-sizing: border-box;
+  }
+  
+  /* ----- HEADER STYLES ----- */
+  
+  header{
+    background-color: var(--yellow);
+    color: var(--red);
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+  
+  /* ----- HEADING STYLES ----- */
+  h1, h2, h3{
+    font-variant: small-caps;
+  }
+  
+  h1{
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0 1rem;
+  text-align: left;
+  }
+  
+  h2{
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-top: 0.25rem solid var(--blue);
+    border-bottom: 0.25rem solid var(--blue);
+  }
+  
+  h3{
+    font-size: 1.15rem;
+    margin: 0.5rem 0;
+  }
+  
+  h2, h3{
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* ----- NAVIGATION STYLES ----- */
+  
+  nav ul{
+    display: flex;
+    justify-content: center, space-evenly;
+    flex-direction: row;
+    width: 2500px;
+  }
+  
+  nav li{
+    display: flex;
+    justify-content: center, space-evenly;
+    flex-direction: row;
+    width: 350px;
+  }
+  
+  /* ----- LINK STYLES ----- */
+  
+  a{
+  display: inline-flex;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--red);
+    color: var(--yellow);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.1rem;
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  /* ----- IMAGE STYLES ----- */
+  
+  img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+  }
+  #fusion, #overform{
+    display: flex;
+  }
+  .image, .img{
+    float: right;
+    margin: 50px;
+  }
+  .text, .mainp{
+    float: left;
+    margin: 50px;
+    max-width: 250px;
+  }
+  
+  .mainp{
+    font-size: 1.5em;
+  }
+  #aftermain{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* ----- TEXT STYLES ----- */
+  
+  p{
+    line-height: 1.5;
+    max-width: 200ch;
+    padding: 0.5rem 0.5rem;
+    margin: 0 auto;
+  text-align: center;
+  }
+  
+  /* ----- MAIN STYLES ----- */
+  
+  main{
+    padding: 1rem;
+  }
+  
+  main section{
+    margin: 1rem auto;
+  }
+  /* ----- FOOTER STYLES ----- */
+  footer{
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 2rem 1rem 1rem 1rem;
+    line-height: 2;
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  
+  footer section{
+    max-width: 300px;
+    margin: 2rem auto 1rem auto;
+  }
+  
+  footer p{
+    font-family: sans-serif;
+    text-align: center;
+  }
+  /* ----- HOVER STYLES ----- */
+  @media (hover:hover){
+    
+    nav a:hover{
+      background-color: var(--white);
+      color: var(--red);
+    }
+    
+    nav a:active{
+      background-color: var(--blue);
+      color: var(--yellow);
+    }
+  
+  #form {
+    width: 400px;
+    padding:20px;
+    text-align: center;
+  }
+  
+    form section div{
+      float: left;
+    }
+    
+    form section div label{
+      display: block;
+    }
+    
+  input{
+    padding:10px;
+    margin:10px 10px;
+  }
+  label, legend {
+    color: var(--blue);
+    background-color: var(--yellow);
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 1.5em;
+      
+    }
+    select, input[type=submit]{
+    color: var(--red);
+    border: var(--blue) solid 2px;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  }
